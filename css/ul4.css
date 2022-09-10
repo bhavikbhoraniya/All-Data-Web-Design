@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+header{
+   
+	height: 100px;
+	display: flex;
+	position: relative;
+}
+
+ul{
+	display: flex;
+	list-style: none;
+	align-items: center;
+
+}
+li{
+	position: relative;
+	padding: 20px;
+	font-size: 30px;
+
+}
+a{
+	color: red;
+	text-decoration: none;
+
+}
+h1{
+	text-align: center;
+	font-size: 50px;
+	margin-top: 100px;
+}
+p{
+	margin-right: 200px;
+	margin-left: 200px;
+}
+header::before{
+	content:"" ;
+	background: black;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	opacity: 0.3;
+}
+section{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-image: url(pizza2.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+button{
+	margin-left: 600px;
+	margin-right: 500px;
+}

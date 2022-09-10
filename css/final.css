@@ -1,0 +1,126 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+header{
+	height: 100px;
+	display: flex;
+	position: relative;
+}
+header:before{
+	content: "";
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-image: url(back1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+	opacity: 0.3;
+}
+ul{
+	display: flex;
+	list-style: none;
+	align-items: center;
+}
+li{
+	padding: 20px;
+}
+a{
+	text-decoration: none;
+	font-size: 30px;
+}
+a:hover{
+	color: red;
+	background: white;
+	border-style: dashed;
+}
+h1{
+	text-align: center;
+	font-size: 50px;
+	color: black;
+}
+p{
+	/*margin-right: 200px;
+	margin-left: 200px*/;
+	color: black;
+	text-align: center;
+}
+section{
+	position: relative;
+	height: 100%;
+	justify-content: center;
+	text-align: center;
+	font-size: 45px;
+}
+
+section:before{
+	content: "";
+	height: 100%;
+	width: 100%;
+	position: absolute;
+/*	background-image: url(123.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+*/	z-index: -1;
+	opacity: 0.5;
+}
+button{
+	font-size: 3rem;
+	padding: 6px 20px;
+	border: 1px solid black;
+	border-radius: 15%;
+	margin: 7px;
+	cursor: pointer;
+	background-color: red;
+}
+
+.home{
+	width: 100%;
+	display: flex;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	height: 100%;
+	height: 500px;
+	text-align: center;
+	margin: auto;
+
+
+}
+aside{
+	text-align: center;
+	font-size: 45px;
+}
+h2{
+	text-align: center;
+}
+.my{
+	width: 100%;
+	height: 100%;
+	border: 2px solid black;
+	background-image: url(abcd.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: lemonchiffon;
+	text-align: center;
+	border-radius: 10%;
+}
+.my:hover{
+	box-shadow: 0px 10px 20px 25px;
+}
+.im{
+	width: 100%;
+	display: flex;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	height: 400px;
+	margin: auto;
+	text-align: center;
+	font-size: 30px;
+}
+.ten{
+	height: 110%;
+	width: 100%;
+	border: 2px solid black;
+	text-align: center;
+}
