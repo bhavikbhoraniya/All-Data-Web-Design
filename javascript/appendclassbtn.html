@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div id="my">
+	<button onclick="demo()">Click Here</button>
+	</div>
+
+</body>
+	<script>
+		function demo() {
+			var x=document.createElement("h1")
+	 		var y=document.createTextNode("welcome to webpage")
+	 		x.appendChild(y)
+	 		var z=document.getElementById('my')
+	 		z.appendChild(x)
+		}
+		
+	</script>
+</html>

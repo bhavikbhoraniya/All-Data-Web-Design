@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<ul id="ad">
+		<li>Home</li>
+		<li>About</li>
+		<li>Service</li>
+		<li>Product</li>
+		<li>Contact Us</li>
+		
+	</ul>
+
+</body>
+	<script>
+		var newelement=document.createElement("li")
+		var newtext=document.createTextNode("your name")
+		newelement.appendChild(newtext)
+
+		var target=document.getElementById('ad')
+		var oldelement=target.children[2]
+		target.replaceChild(newelement,oldelement)
+	</script>
+</html>

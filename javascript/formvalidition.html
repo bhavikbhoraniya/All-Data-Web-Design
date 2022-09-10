@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form validition</title>
+</head>
+<body>
+<form id="form">
+	Name:<input type="text" id="name"><br><br>
+	Password:<input type="password" id="password"><br>
+	<button type="submit">Submit</button>
+</form>
+
+
+
+</body>
+<script type="text/javascript">
+	const name=document.getElementById('name')
+	const password=document.getElementById('password')
+	const form=document.getElementById('form')
+
+	form.addEventListener('submit',(e)=>{
+		if(name.value === '' || name.value == null)
+
+			{
+				alert("name is required")
+			}
+		if(password.value.length<6)
+
+			{alert("password to small")}
+		if(password.value.length>20)
+
+			{alert("password to long")}
+		e.preventDefault()
+
+	})
+
+
+</script>
+
+
+
+</html>
