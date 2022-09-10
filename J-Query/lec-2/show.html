@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title></title>
+</head>
+<body>
+	<h1>this id j-query</h1>
+	<button>hide</button>
+	<button id="btn">show</button>
+</body>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("h1").hide()
+			})
+			$("#btn").click(function(){
+				$("h1").show()
+			})
+		})
+	</script>
+</html>

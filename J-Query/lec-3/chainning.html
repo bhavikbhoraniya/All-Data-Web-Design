@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Chainning</title>
+</head>
+<body>
+    
+    <h1>this is change css and hide</h1>
+    <button>click here</button>
+</body>
+
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("h1").css("color","blue")
+                .hide(4000,function(){
+                    alert("hide")
+                });   
+        });
+    });
+</script>
+</html>

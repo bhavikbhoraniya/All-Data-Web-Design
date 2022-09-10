@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title></title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+<script>
+	$(document).ready(function(){
+		$("body").keypress(function(){
+			$("div").css("backgroundColor","yellow")
+		})
+		$("body").keyup(function(){
+			$("div").css("backgroundColor","green")
+		})
+		$("body").keydown(function(){
+			$("div").css("backgroundColor","blue")
+		})
+	});
+</script>
+</html>

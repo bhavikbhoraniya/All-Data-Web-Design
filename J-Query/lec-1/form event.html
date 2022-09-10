@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title></title>
+</head>
+<body>
+	<form id="sub">
+	username<input type="text" name="" id="uname">
+	password<input type="password" name="" id="ps">
+	<button type="submit">submit</button>
+	</form>
+</body>
+<script>
+	$(document).ready(function(){
+		$("#uname,#ps").focus(function(){
+			$("#uname,#ps").css("backgroundColor","yellow")
+		})
+		$("#uname,#ps").blur(function(){
+			$("#uname,#ps").css("backgroundColor","")
+		})
+		$("#sub").submit(function(){
+			alert("you have submit")
+		})
+	});
+</script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title></title>
+	<style type="text/css">
+		#a{
+			height: 100px;
+			width: 300px;
+			border: 1px solid black;
+			background: orange;			
+		}
+		#b{
+			height: 100px;
+			width: 300px;
+			border: 1px solid black;
+			background: whitesmoke;
+		}
+		#c{
+			height: 100px;
+			width: 300px;
+			border: 1px solid black;
+			background: green;
+		}
+	</style>
+</head>
+<body>
+	<div id="a"></div>
+	<div id="b"></div>
+	<div id="c"></div>
+	<button>fede out</button>
+</body>
+<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("#a").fadeOut(500)
+			$("#b").fadeOut(1000)
+			$("#c").fadeOut(1500)
+		})
+	})
+</script>
+</html>

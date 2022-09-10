@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>No-Conflict</title>
+</head>
+<body>
+	<h1>My Name Is Bhavik</h1>
+	<button>Click Here</button>
+</body>
+<script>
+	var b=$.noConflict()
+	b(document).ready(function(){
+		b("button").click(function(){
+		b("h1").css("color","blue")
+		})
+	})
+</script>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Slide Stop   </title>
+    <style>
+        #a{
+            height: 150px;
+            width: 100%;
+            background-color: yellow;
+            border: 1pox solid black;
+        }
+        #b{
+            height: 150px;
+            width: 100%;
+            background-color: green;
+            border: 1pox solid black;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn-1"> Start</button>
+    <button id="btn-2">Stop</button>
+    <div id="a">
+        start toggle
+    </div>
+    <div id="b">
+        this is slide
+    </div>
+</body>
+
+<script>
+    $(document).ready(function(){
+        $("#btn-1").click(function(){
+            $("#b").slideToggle(3000)
+        });
+        $("#btn-2").click(function(){
+            $("#b").stop()
+        });
+    });
+</script>
+</html>
